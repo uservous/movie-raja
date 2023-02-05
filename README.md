@@ -1,1 +1,1 @@
-# movie-raja
+[![Build status](https://badge.buildkite.com/f9288332644ad419db816cabbf6b7d8bef992dc813dba71605.svg)](https://buildkite.com/labsapp-dot-link/movie-raja)
