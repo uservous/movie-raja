@@ -2,5 +2,9 @@ steps:
   - command: "npm install"
   - wait
   - command: "npm run test"
+    env:
+     BUILDKITE_REPO:
   - wait
   - command: "npm run build"
+    env:
+     BUILDKITE_REPO:
