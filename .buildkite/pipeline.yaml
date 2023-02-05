@@ -1,5 +1,4 @@
 steps:
   - command: "npm ci && npm run build && copy package*.json build && cd build && npm pack"
     artifact_paths:
-    - ".tgz"    
-  - command: "echo more commands"
+    - "build/*.tgz"
