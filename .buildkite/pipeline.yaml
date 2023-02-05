@@ -1,4 +1,4 @@
 steps:
-  - command: "npm ci && npm run build && npm version major  --no-git-tag-version  && git push origin HEAD:master && copy package*.json build && cd build && npm pack"
+  - command: "npm ci && npm run build && npm version major  --no-git-tag-version && copy package*.json build && cd build && npm pack"
     artifact_paths:
     - "build/movie-raja*.tgz" 
