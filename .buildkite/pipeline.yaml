@@ -1,10 +1,8 @@
 steps:
-  - command: "npm install"
-  - wait
-  - command: "npm run test"
+  - command: "npm ci && npm run test"
     env:
      BUILDKITE_REPO:
   - wait
-  - command: "npm run build"
+  - command: "npm ci && npm run build && npm pack build"
     env:
      BUILDKITE_REPO:
