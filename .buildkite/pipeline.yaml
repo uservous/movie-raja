@@ -1,8 +1,4 @@
 steps:
-  - command: "npm ci && npm run test"
-    env:
-     BUILDKITE_REPO:
-  - wait
   - command: "npm ci && npm run build && npm pack build"
-    env:
-     BUILDKITE_REPO:
+    artifact_paths:
+    - "build*.tgz"    
