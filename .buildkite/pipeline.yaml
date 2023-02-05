@@ -1,4 +1,4 @@
 steps:
-  - command: "npm ci && npm run build && npm pack build"
+  - command: "npm version minor && npm npm ci && npm run build && npm pack build"
     artifact_paths:
     - "build*.tgz"    
