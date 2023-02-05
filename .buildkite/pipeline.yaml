@@ -1,5 +1,5 @@
 steps:
-  - command: "npm ci && npm run build && npm pack build"
+  - command: "npm ci && npm run build && npm pack"
     artifact_paths:
     - "build*.tgz"    
   - command: "echo more commands"
