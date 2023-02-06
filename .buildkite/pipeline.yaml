@@ -2,3 +2,5 @@ steps:
   - command: "npm ci && npm run build && npm version major  --no-git-tag-version && copy package*.json build && cd build && npm pack"
     artifact_paths:
     - "build/movie-raja*.tgz" 
+  - command: "buildkite-agent artifact download build/movie-raja*.tgz . --build $BUILDKITE_BUILD_NUMBER"
+   
